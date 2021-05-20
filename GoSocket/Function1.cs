@@ -1,16 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Net.Http;
-using System.Reflection;
-using System.Xml;
-using System.Xml.Linq;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Host;
-
 namespace GoSocket
 {
+    using Microsoft.Azure.WebJobs;
+    using Microsoft.Azure.WebJobs.Host;
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+    using System.Linq;
+    using System.Xml.Linq;
+
     public static class Function1
     {
         [FunctionName("Function1")]
