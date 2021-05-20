@@ -11,7 +11,7 @@ namespace GoSocket
     public static class Function1
     {
         [FunctionName("Function1")]
-        public static void Run([TimerTrigger("0 */1 * * * *")]TimerInfo myTimer, TraceWriter log)
+        public static void Run([TimerTrigger("0 */30 * * * *")]TimerInfo myTimer, TraceWriter log)
         {
             String MainPath = Directory.GetCurrentDirectory();
             XElement xmlRoot = XElement.Load(MainPath.Replace(@"bin\Debug\net461",@"Resource\File.xml"));
